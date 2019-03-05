@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Accelerometer Group_12</string>
+    <string-array name="array_sex">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="two.andr.pearson.com.myapplication.MainActivity">
+
+    <com.jjoe64.graphview.GraphView
+    android:layout_width="0dp"
+    android:layout_height="300dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/graphView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.99" />
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="84dp"
+        android:layout_height="39dp"
+        android:text="Start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="0dp"
+        tools:layout_editor_absoluteX="300dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="85dp"
+        android:layout_height="37dp"
+        android:text="Stop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.132"
+        android:layout_marginRight="0dp" />
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="177dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="9dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView"
+        android:layout_marginStart="9dp" />
+
+    <EditText
+        android:id="@+id/editAge"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Age"
+        android:inputType="number"
+        android:layout_marginLeft="9dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView2"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/editName"
+        android:layout_marginStart="9dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="64dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:elevation="14dp"
+        android:gravity="center"
+        android:text="Name"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="64dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="Age"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="63dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Sex"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="63dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="PID"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginStart="16dp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="142dp"
+        android:layout_height="39dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/editAge" />
+
+    <EditText
+        android:id="@+id/editPID"
+        android:layout_width="179dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Patient ID"
+        android:inputType="number"
+        android:layout_marginLeft="9dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView4"
+        android:layout_marginTop="9dp"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        android:layout_marginStart="9dp" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:text="Upload"
+        tools:layout_editor_absoluteX="299dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/btnDown"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:text="Down"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpload"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="299dp" />
+
+
+</android.support.constraint.ConstraintLayout>
